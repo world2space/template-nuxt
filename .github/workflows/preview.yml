@@ -67,4 +67,4 @@ jobs:
         id: deployment
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: ../src/dist
+          folder: dist
