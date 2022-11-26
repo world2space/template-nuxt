@@ -4,7 +4,16 @@ import localizationConfig from "./locales/config";
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  generate: {
+    fallback: true,
+    routes: [
+      ...localizationConfig.locales.map(locale => 
+          locale.code==localizationConfig.defaultLocale
+            ? "/"
+            : `/${locale.code}`
+        )
+    ]
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'template',
