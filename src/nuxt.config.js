@@ -97,7 +97,7 @@ export default {
   },
 
   sitemap: {
-    hostname: process.env.url,
+    hostname: "world2space.github.io/template-nuxt",
     defaults: {
       changefreq: 'daily',
       priority: 1,
