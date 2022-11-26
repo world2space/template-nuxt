@@ -19,9 +19,13 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+
 jobs:
   # Build job
   build:
+    environment:
+      name: preview
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -56,8 +60,9 @@ jobs:
   # Deployment job
   deploy:
     environment:
-      name: github-pages
+      name: preview
       url: ${{ steps.deployment.outputs.page_url }}
+      
     runs-on: ubuntu-latest
     needs: build
     steps:
