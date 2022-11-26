@@ -88,7 +88,7 @@ export default {
   },
 
   sitemap: {
-    hostname: process.env.FRONTEND_URL,
+    hostname: process.env.url,
     defaults: {
       changefreq: 'daily',
       priority: 1,
