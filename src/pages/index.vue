@@ -16,6 +16,10 @@
   padding-bottom: 5rem;
 }
 
+pre{
+  white-space: break-spaces;
+}
+
 .top {
   flex-direction: revert;
   height: 90vh;
