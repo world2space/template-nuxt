@@ -26,7 +26,6 @@
 	- Dotenv
 	- Svg
 	- PWA
-	- Axios
 
 ## Usage
 
