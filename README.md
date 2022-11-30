@@ -1,4 +1,4 @@
-# template-nuxt
+# template-nuxt-basic
 
 
 

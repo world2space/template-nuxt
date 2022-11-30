@@ -108,7 +108,7 @@ export default {
   },
   router: {
     middleware: 'middleware',
-    base: '/template-nuxt/'
+    base: '/template-nuxt-basic/'
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
