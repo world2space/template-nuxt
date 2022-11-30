@@ -38,5 +38,5 @@
 npm i -g @kozmonos/template-generator
 
 #  pull this template to local folder
-template pull --url https://github.com/world2space/template-nuxt
+template pull --url https://github.com/world2space/template-nuxt-basic
 ```
