@@ -99,7 +99,7 @@ export default {
   },
 
   sitemap: {
-    hostname: "https://world2space.github.io/template-nuxt",
+    hostname: "https://world2space.github.io",
     defaults: {
       changefreq: 'daily',
       priority: 1,
