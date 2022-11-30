@@ -1,4 +1,4 @@
-require('dotenv').config()
+// require('dotenv').config()
 import localizationConfig from "./locales/config";
 
 export default {

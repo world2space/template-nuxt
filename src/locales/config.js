@@ -14,7 +14,7 @@ const locales = [
 }))
 
 
-export default {
+module.exports= {
 	defaultLocale,
 	locales,
 	seo: true,

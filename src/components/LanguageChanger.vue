@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div data-cy="language-changer">
     <span
       v-for="language in languages"
       :key="language"

@@ -1,5 +1,5 @@
 {
-  "name": "{{name}}",
+  "name": "world2space",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,8 @@
     "lint:prettier": "prettier --check .",
     "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
     "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix && npm run lint:style -- --fix",
-    "test:e2e": "nightwatch"
+    "e2e": "cypress run --browser /usr/bin/google-chrome",
+    "e2e:ci": "cypress run --record --key 3fa75e84-96d8-4e02-9a1b-ce41f133a795"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
@@ -37,11 +38,12 @@
     "@nuxtjs/eslint-module": "^3.1.0",
     "@nuxtjs/stylelint-module": "^4.1.0",
     "chromedriver": "^106.0.1",
+    "cypress": "^11.2.0",
+    "dotenv": "^16.0.3",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-vue": "^9.5.1",
-    "nightwatch": "^2.3.9",
     "node-sass": "^8.0.0",
     "postcss-html": "^1.5.0",
     "prettier": "^2.7.1",
@@ -50,6 +52,7 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended-vue": "^1.4.0",
     "stylelint-config-standard": "^28.0.0",
-    "webpack": "^4.46.0"
+    "webpack": "^4.46.0",
+    "x2js": "^3.4.4"
   }
 }

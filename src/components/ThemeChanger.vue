@@ -1,5 +1,5 @@
 <template>
-  <div id="theme-changer" @click="changeTheme">
+  <div id="theme-changer" data-cy="theme-changer"  @click="changeTheme">
     <dark-icon v-if="$colorMode.value == 'dark'" />
     <light-icon v-else />
   </div>

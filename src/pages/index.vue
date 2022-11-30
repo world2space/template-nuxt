@@ -5,6 +5,7 @@
       <div class="info">
         <h1>World2Space</h1>
         <p>{{ $t('home.description') }}</p>
+        <social-github-button url="https://github.com/world2space/template-nuxt-basic" />
       </div>
       <app-logo />
     </div>
